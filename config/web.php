@@ -5,12 +5,17 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    'name' => 'Minha Aplicação',
+    'version' => '2.5',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    'language' => 'pt-BR',
+    'sourceLanguage' => 'pt-BR',
+    'timeZone' => 'America/Bahia',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
