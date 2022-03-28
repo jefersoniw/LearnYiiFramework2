@@ -44,6 +44,7 @@ AppAsset::register($this);
                 ['label' => 'Contact', 'url' => ['/site/contact']],
                 ['label' => 'Form-Example', 'url' => ['/exercicios/formulario']],
                 ['label' => 'Pessoas', 'url' => ['/exercicios/pessoas']],
+                ['label' => 'Pessoas CRUD', 'url' => ['/pessoas/index']],
                 Yii::$app->user->isGuest ? (['label' => 'Login', 'url' => ['/site/login']]
                 ) : ('<li>'
                     . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
