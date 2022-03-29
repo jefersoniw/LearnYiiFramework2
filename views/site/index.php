@@ -2,11 +2,40 @@
 
 /** @var yii\web\View $this */
 
+use app\classes\widgets\HelloWidget;
+use app\classes\widgets\HelloWorldBeginEndWidget;
+use yii\helpers\Html;
+use yii\helpers\HtmlPurifier;
+use yii\jui\DatePicker;
+
 $this->title = 'My Yii Application';
+
 ?>
 <div class="site-index">
 
     <div class="jumbotron text-center bg-transparent">
+
+        <!-- <div>
+            <?= DatePicker::widget([
+                'name' => 'data_venda',
+                'language' => 'pt',
+                'dateFormat' => 'dd/MM/yyyy'
+            ]) ?>
+        </div> -->
+        <div>
+            <?php HelloWorldBeginEndWidget::begin(['encode' => false]); ?>
+
+            <h2>Video aulas do yii2 framework</h2>
+            <h3>Video aula produzidas por Kilderson</h3>
+
+            <?php HelloWorldBeginEndWidget::end(); ?>
+        </div>
+        <div>
+            <?= HelloWidget::widget([
+                'message' => 'Olá Mundo',
+                'submessage' => 'Olá mundo, tudo bem comigo!'
+            ]); ?>
+        </div>
 
         <?= $nome . ' ' . $sobrenome ?>
 
