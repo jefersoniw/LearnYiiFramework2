@@ -57,7 +57,13 @@ $config = [
         ],
         */
     ],
+    'modules' => [
+        'financeiro' => [
+            'class' => 'app\modules\financeiro\FinanceiroModule'
+        ]
+    ],
     'params' => $params,
+
 ];
 
 if (YII_ENV_DEV) {
