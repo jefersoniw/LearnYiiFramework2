@@ -56,6 +56,10 @@ $config = [
             ],
         ],
         */
+        'formatter' => [
+            'dateFormat' => 'dd/MM/YYYY',
+            'class' => 'app\classes\components\MyFormat'
+        ],
     ],
     'modules' => [
         'financeiro' => [
@@ -63,6 +67,7 @@ $config = [
         ]
     ],
     'params' => $params,
+
 
 ];
 
