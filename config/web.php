@@ -60,6 +60,9 @@ $config = [
             'dateFormat' => 'dd/MM/YYYY',
             'class' => 'app\classes\components\MyFormat'
         ],
+        'authManager' => [
+            'class' => 'yii\rbac\PhpManager',
+        ],
     ],
     'modules' => [
         'financeiro' => [
