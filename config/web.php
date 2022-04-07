@@ -61,7 +61,7 @@ $config = [
             'class' => 'app\classes\components\MyFormat'
         ],
         'authManager' => [
-            'class' => 'yii\rbac\PhpManager',
+            'class' => 'yii\rbac\DbManager',
         ],
     ],
     'modules' => [
