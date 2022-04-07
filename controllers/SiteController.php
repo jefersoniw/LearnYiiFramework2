@@ -61,6 +61,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        /*AULA SOBRE AUTHORIZATION
         $auth = Yii::$app->authManager;
 
         $admin = $auth->createRole('administrador');
@@ -94,7 +95,7 @@ class SiteController extends Controller
 
         $auth->assign($admin, 1);
         $auth->assign($supervisor, 2);
-        $auth->assign($operador, 3);
+        $auth->assign($operador, 3);*/
 
         return $this->render('index');
     }
