@@ -15,13 +15,13 @@ $this->title = 'My Yii Application';
 
     <div class="jumbotron text-center bg-transparent">
 
-        <!-- <div>
+        <div>
             <?= DatePicker::widget([
                 'name' => 'data_venda',
                 'language' => 'pt',
                 'dateFormat' => 'dd/MM/yyyy'
             ]) ?>
-        </div> -->
+        </div>
         <div>
             <?php HelloWorldBeginEndWidget::begin(['encode' => false]); ?>
 
