@@ -56,8 +56,22 @@ $config = [
             ],
         ],
         */
+        'formatter' => [
+            'dateFormat' => 'dd/MM/YYYY',
+            'class' => 'app\classes\components\MyFormat'
+        ],
+        /*'authManager' => [
+            'class' => 'yii\rbac\PhpManager',
+        ],*/
+    ],
+    'modules' => [
+        'financeiro' => [
+            'class' => 'app\modules\financeiro\FinanceiroModule'
+        ]
     ],
     'params' => $params,
+
+
 ];
 
 if (YII_ENV_DEV) {

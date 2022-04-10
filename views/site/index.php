@@ -37,7 +37,6 @@ $this->title = 'My Yii Application';
             ]); ?>
         </div>
 
-        <?= $nome . ' ' . $sobrenome ?>
 
         <h1 class="display-4">Congratulations!</h1>
 
