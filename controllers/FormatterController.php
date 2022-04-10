@@ -30,7 +30,7 @@ class FormatterController extends Controller
     <p>Datas php: {$formatter->asDate("2022-04-06", "php:d/m/Y")}</p>
     <p>Datas padrão alterada no webconfig: {$formatter->asDate("2022-04-06")}</p>
 
-    <p>Moedas: {$formatter->asCurrency("15000.00")}</p>
+    <p>Moedas: {$formatter->asCurrency(12345.67, "R$")}</p>
     <p>Size: {$formatter->asShortSize("5222900", "2")}</p>
     <p>CPF: {$formatter->asCpf('33233233654')}</p>
     <p>CPF: {$formatter->asCep('41341720')}</p>
