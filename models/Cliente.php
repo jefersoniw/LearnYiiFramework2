@@ -12,6 +12,8 @@ use Yii;
  */
 class Cliente extends \yii\db\ActiveRecord
 {
+    public $fotoDoCliente;
+
     /**
      * {@inheritdoc}
      */
@@ -27,7 +29,8 @@ class Cliente extends \yii\db\ActiveRecord
     {
         return [
             [['nome'], 'required'],
-            [['nome'], 'string', 'max' => 60],
+            [['nome', 'foto'], 'string', 'max' => 60],
+            [['fotoDoCliente'], 'file', 'extensions' => 'jpg, png, jpeg'],
         ];
     }
 
@@ -39,6 +42,8 @@ class Cliente extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'nome' => 'Nome',
+            'foto' => 'Foto do Cliente',
+            'fotoDoCliente' => 'Foto do Cliente'
         ];
     }
 }
